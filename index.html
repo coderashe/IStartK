@@ -16,8 +16,7 @@
         var p = window.location.search.match(/p=([^&]*)/);
         if(p) {
           window.history.replaceState(null, null,
-            window.location.pathname.split('/').slice(0,2).join('/') + '/' +
-            decodeURIComponent(p[1])
+            '/IStartK' + decodeURIComponent(p[1])
           );
         }
       })();

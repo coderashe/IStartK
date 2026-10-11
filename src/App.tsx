@@ -31,7 +31,7 @@ const AnimatedRoutes = () => {
 
 export default function App() {
   return (
-    <BrowserRouter basename="/iStartCapital">
+    <BrowserRouter basename="/IStartK">
       <AnimatedRoutes />
     </BrowserRouter>
   );

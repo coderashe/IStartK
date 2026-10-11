@@ -5,9 +5,11 @@
     <title>iStart Capital</title>
     <script>
       var l = window.location;
+      var base = '/IStartK';
+      var path = l.pathname.slice(base.length) || '/';
       l.replace(
-        l.protocol + '//' + l.host + l.pathname.split('/').slice(0, 2).join('/') +
-        '/?p=' + encodeURIComponent(l.pathname.slice(1) + l.search) + l.hash
+        l.protocol + '//' + l.host + base +
+        '/?p=' + encodeURIComponent(path) + l.hash
       );
     </script>
   </head>
